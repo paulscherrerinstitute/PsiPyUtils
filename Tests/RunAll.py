@@ -19,6 +19,7 @@ from Tests.TestTempFile import *
 from Tests.TestTempWorkDir import *
 from Tests.TestFileOperations import *
 from Tests.TestXmlToolbox import *
+from Tests.TestTextReplace import *
 
 ####################################################################################################################
 # Main
