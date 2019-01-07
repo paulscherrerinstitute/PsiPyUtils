@@ -1,3 +1,7 @@
+## 2.1.0
+* New Features
+  * Added initial version of TextReplace module 
+
 ## 2.0.0
 * First open-source release (older history discarded)
 * Changes (not reverse compatible)
