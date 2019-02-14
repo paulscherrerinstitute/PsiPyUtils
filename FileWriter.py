@@ -33,6 +33,8 @@ class FileWriter:
         if indentChar is None:
             indentChar = "\t"
         self._indentChar = indentChar
+        self._indent = 0
+        self._content = []
 
     ####################################################################################################################
     # Context object handlers
@@ -43,8 +45,7 @@ class FileWriter:
         return self
 
     def __exit__(self, exc_type, exc_value, traceback):
-        with open(self._fileName, "w+") as f:
-            f.write("".join(self._content))
+        self.WriteAll()
 
     ####################################################################################################################
     # Public Functions
@@ -101,5 +102,15 @@ class FileWriter:
         self._content[-1] = self._content[-1] + append
         if keepNewline:
             self._content[-1] = self._content[-1] + "\n"
+        return self
+
+    def WriteAll(self):
+        """
+        Write all content to file
+
+        :return: FileWriter
+        """
+        with open(self._fileName, "w+") as f:
+            f.write("".join(self._content))
         return self
 

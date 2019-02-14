@@ -6,3 +6,6 @@
 Example/**/*
 !Example/*.py
 
+#Packaging artifacts
+*.egg-info
+
