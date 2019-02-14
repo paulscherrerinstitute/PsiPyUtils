@@ -27,13 +27,21 @@ Stable releases are tagged in the form *major*.*minor*.*bugfix*.
 * Whenever new features are added, the *minor* version number is incremented
 * If only bugs are fixed (i.e. no functional changes are applied), the *bugfix* version is incremented
 
-# Dependencies
-## Library
-None
+# Installation
+to install, use the command below
 
-## External
-None
+```
+pip install <root>\dist\PsiPyUtils-<version>.tar.gz
+``` 
 
+Alternatively the package can be used directly as git-submodule (as it was done in the past). This allows for being reverse compatible and do not break projects that depend on using the package as submodule.
+
+# Packaing
+To package the project after making changes, update the version number in *setup.py* and run
+
+```
+python3 setup.py sdist
+```
 
 
  

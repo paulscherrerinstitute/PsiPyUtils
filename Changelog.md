@@ -1,3 +1,7 @@
+## 2.2.0
+* New Features
+  * Added packaging script and distribute as PIP package
+
 ## 2.1.0
 * New Features
   * Added initial version of TextReplace module 

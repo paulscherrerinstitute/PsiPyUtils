@@ -12,17 +12,7 @@ class CustomSdist(sdist):
         shutil.rmtree("PsiPyUtils.egg-info", ignore_errors=True)
 
         #Build from directory above
-       # oldDir = os.path.abspath(".")
-        #os.chdir("..")
         sdist.run(self)
-        #os.chdir(oldDir)
-
-        #Move results
-        #shutil.copytree("../dist", "dist")
-        #shutil.copytree("../PsiPyUtils.egg-info", "PsiPyUtils.egg-info")
-        #shutil.rmtree("../dist")
-        #shutil.rmtree("../PsiPyUtils.egg-info")
-
 
 #Package
 setuptools.setup(
