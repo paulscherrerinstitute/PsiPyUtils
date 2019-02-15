@@ -17,7 +17,7 @@ class CustomSdist(sdist):
 #Package
 setuptools.setup(
     name="PsiPyUtils",
-    version="2.2.0",
+    version="3.0.0",
     author="Oliver Bründler",
     author_email="oliver.bruendler@psi.ch",
     description="Python Utility Library",
