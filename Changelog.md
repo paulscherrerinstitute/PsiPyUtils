@@ -1,6 +1,14 @@
-## 2.2.0
+## 3.0.0
+* Non-reverse compatible changes
+  * Modified *\_\_init\_\_.py* to import classes without specifying their file-name.
+    * Old form: *from PsiPyUtils.FileWriter import FileWriter*
+    * New form: *from PsiPyUtils import FileWriter*
 * New Features
   * Added packaging script and distribute as PIP package
+
+## 2.2.0
+* New Features
+  
 
 ## 2.1.0
 * New Features
