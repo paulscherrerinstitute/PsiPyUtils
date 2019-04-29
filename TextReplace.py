@@ -31,7 +31,7 @@ def TaggedReplace(startTag : str, endTag : str, text : str, file : str):
         content = f.read()
 
     #Check if tags are present
-    if not re.search(TAG_REGEX, content):
+    if not re.search(TAG_REGEX, content, flags=re.DOTALL):
         raise TagsNotFoundError("Tags {} {} are not found in the file {}".format(startTag, endTag, file))
 
     #Do substitution
