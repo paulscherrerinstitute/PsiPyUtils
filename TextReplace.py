@@ -24,7 +24,7 @@ def TaggedReplace(startTag : str, endTag : str, text : str, file : str):
     :param file: File to do the replacement in
     """
     #Setup
-    TAG_REGEX = "{}.*{}".format(startTag, endTag)
+    TAG_REGEX = "{}.*?{}".format(startTag, endTag)
 
     #Open File
     with open(file) as f:
