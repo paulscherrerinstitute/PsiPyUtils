@@ -1,3 +1,10 @@
+## 3.0.1
+* New Features
+  * None
+* Bugfixes
+  * Make TextReplace.TaggedReplace() non-sensitive to line ends in the text to replace
+  * Make TextReplace.TaggedReplace() non-greedy (before the behavior was wrong if there were multiple instances of the tags present in the same file)
+
 ## 3.0.0
 * Non-reverse compatible changes
   * Modified *\_\_init\_\_.py* to import classes without specifying their file-name.
